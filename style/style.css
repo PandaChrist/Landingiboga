@@ -1,0 +1,237 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: rgb(245, 245, 245);
+    font-family: "MADE TOMMY";
+}
+body{
+    background-color: black;
+}
+header{
+    height: 100vh;
+    width: 100%;
+    background-image: url('../images/IBOGAWEBSITESLIDE1.4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 2vh;
+}
+nav{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr ;
+    grid-template-areas:
+    "logo ul contact";
+    column-gap: 0px;
+    row-gap: 0px;
+}
+nav .logo img{
+    position: relative;
+    margin: 10px 10px 10px 30px;
+    width: 50px;
+    height: auto;
+    /* background-image: url("images/Fichier1@300x-8.png"); */
+}
+ul{
+    padding-top: 30px;
+}
+li{
+    display: inline;
+    font-size: 12px;
+    font-family: "segoe ui";
+    padding-left: 80px;
+    line-height: 0;
+}
+li a{
+    position: relative;
+}
+li a::after{
+    content: url(../icones/Fichier\ 2@2x.png);
+    margin-top: -55px;
+    margin-left: -100px;
+    position: absolute;
+    line-height: 0;
+    transition: all ease 1s;
+    height: fit-content;
+
+}
+li a:hover::after{
+    content: url(../icones/Fichier\ 8\ \(2\)@2x.png);
+    margin-top: 10px;
+    margin-left: -60px;
+    height: fit-content;
+
+    transition: all ease 1s;
+
+}
+.header-accroche{
+    position: absolute;
+    height: 55%;
+    top: 30%;
+    left: 55%;
+    padding-right: 20px;
+    font-family: "MADE TOMMY";
+    font-weight: lighter;
+}
+.header-title{
+    font-size: 60px;
+}
+.header-title span{
+    font-family: 'Brushcrazy DEMO Regular';
+}
+p.header-title{
+    line-height: 40px;
+    font-family: "MADE TOMMY";
+    font-weight: bold;
+    color: rgb(233, 140, 0);
+}
+.header-paragraphe{
+    margin-top: 60px;
+    padding-right: 15vw;
+    line-height: 25px;
+    font-size: 15px;
+}
+.contact{
+    position: absolute;
+    bottom: 0vh;
+    font-family: "MADE TOMMY";
+    font-weight: lighter;
+    border-style: none;
+    height: 30px;
+    line-height: 0;
+    padding: 17px 25px 17px 25px;
+    background-color: rgb(197, 15, 15);
+}
+.contact-us{
+    font-family: "segoe ui";
+    font-weight: bold;
+    border-style: none;
+    height: 30px;
+    margin: 25px 140px 0px 0px;
+    width: 120px;
+    font-size: 12px;
+    line-height: 0;
+    color: black;
+    
+}
+.contact>a,a {
+    text-decoration: none;
+}
+.service{
+    margin-right: auto;
+    margin-left: auto;
+}
+.center-text{
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    margin: 30px;
+}
+.center-text::after{
+    content: url(../icones/Fichier\ 2@2x.png);
+    margin-top: -55px;
+    margin-left: -140px;
+    position: absolute;
+    line-height: 0;
+    transition: all ease 1s;
+    height: fit-content;
+
+}
+.service-container{
+    margin-bottom: 30px;
+    margin-left: 6vw;
+    margin-right: 6vw;
+    /* padding-left: 6vw;
+    padding-right: 6vw; */
+    overflow: hidden;
+    z-index: 2;
+}
+.service-list{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.service-list>*{
+    position: relative;
+    /* display: inline-block; */
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 24vw;
+    min-width: 24vw;
+    height: 85vh;
+    /* border-style: solid;
+    border-color: beige; */
+    border-width: 3px;
+    margin: 0;
+    transform: skew(-5deg);
+    color: white;
+    filter:sepia();
+    transition: all ease-in-out 0.5s;
+    
+}
+.service-list>*::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24vw;
+    height: 85vh;
+    background-color: rgba(77, 77, 77, 0.432);
+    background: linear-gradient(0deg, rgba(45,42,42,1) 0%, rgba(45,42,42,0.0141232354325325) 98%);
+}
+.service-list>*:hover{
+    filter: none;
+    /* transform: scale(105%); */
+    transition: all ease-in-out 0.5s;
+}
+.service-list>*:hover::before{
+    display: none;
+}
+.service-list>*>*{
+    transform: skew(5deg);  
+}
+.experience{
+    background: url("../images/services/iboga_advert.jpg");
+    background-size: cover;
+    background-position-x: 40%;
+}
+.production{
+    background: url("../images/services/iboga-production.jpg");
+    background-size: cover;
+    background-position-x: 40%;
+}
+.digital{
+    background: url("../images/services/img_intro.jpg");
+    background-size: cover;
+    background-position-x: 40%;
+}
+.construction{
+    background: url("../images/services/IBOGA_construction.jpg");
+    background-size: cover;
+    background-position-x: 40%;
+}
+.card-text{
+    position: absolute;
+    /* display: inline;
+    text-align: center; */
+    bottom: 20px;
+    left: 40%;
+    text-shadow: 100px;
+    text-align: center;
+
+}
+.card-text h3{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 15px;
+    font-weight: lighter;
+    margin-top: 5px;
+    margin-bottom: 10px;
+
+}
+.voir{
+    background: url("../icones/Brush/brush_rouge.png");
+    background-size: cover;
+    font-size: 12px;
+}
